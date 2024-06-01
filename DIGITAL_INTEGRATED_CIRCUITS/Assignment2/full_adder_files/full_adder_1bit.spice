@@ -1,0 +1,113 @@
+* SPICE3 file created from full_adder_1bit.ext - technology: scmos
+
+.option scale=0.12u
+
+M1000 Sum0 a_85_n19# VDD VDD pfet w=4 l=2
++  ad=32 pd=24 as=116 ps=98
+M1001 a_101_n19# a a_95_n19# Gnd nfet w=4 l=2
++  ad=16 pd=16 as=16 ps=16
+M1002 Sum0 a_85_n19# Gnd Gnd nfet w=4 l=2
++  ad=32 pd=24 as=116 ps=98
+M1003 VDD a a_16_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=44 ps=38
+M1004 VDD b a_61_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=48 ps=40
+M1005 Gnd a_5_n22# cout Gnd nfet w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+M1006 a_16_n19# b Gnd Gnd nfet w=4 l=2
++  ad=44 pd=38 as=0 ps=0
+M1007 Gnd a a_16_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_61_n19# a Gnd Gnd nfet w=4 l=2
++  ad=48 pd=40 as=0 ps=0
+M1009 a_47_12# a a_5_n22# VDD pfet w=4 l=2
++  ad=16 pd=16 as=24 ps=20
+M1010 Gnd b a_47_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=16 ps=16
+M1011 VDD b a_47_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 a_5_n22# cin a_16_n19# Gnd nfet w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1013 Gnd b a_61_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 a_16_12# b VDD VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 a_61_12# cin VDD VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 a_47_n19# a a_5_n22# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 VDD a_5_n22# cout VDD pfet w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+M1018 a_95_n19# b a_85_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=32 ps=24
+M1019 a_95_12# b a_85_n19# VDD pfet w=4 l=2
++  ad=16 pd=16 as=32 ps=24
+M1020 VDD cin a_101_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=16 ps=16
+M1021 a_61_n19# cin Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 a_101_12# a a_95_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1023 a_61_12# a VDD VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 Gnd cin a_101_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 a_85_n19# a_5_n22# a_61_n19# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 a_5_n22# cin a_16_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1027 a_85_n19# a_5_n22# a_61_12# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 Gnd Sum0 0.03fF
+C1 VDD cin 1.22fF
+C2 a_5_n22# a_85_n19# 0.06fF
+C3 a_16_12# a 0.02fF
+C4 a_5_n22# cin 0.20fF
+C5 a_5_n22# VDD 0.35fF
+C6 Gnd a 0.07fF
+C7 cout VDD 0.15fF
+C8 Gnd a_61_n19# 0.18fF
+C9 Gnd a_16_n19# 0.18fF
+C10 a b 0.96fF
+C11 a_5_n22# cout 0.06fF
+C12 a_61_12# b 0.02fF
+C13 a_61_n19# b 0.02fF
+C14 a_16_12# VDD 0.41fF
+C15 a_16_n19# b 0.02fF
+C16 a_85_n19# Sum0 0.06fF
+C17 a_5_n22# a_16_12# 0.45fF
+C18 a_85_n19# b 0.02fF
+C19 VDD Sum0 0.09fF
+C20 a_16_n19# a 0.02fF
+C21 b cin 0.58fF
+C22 VDD b 2.51fF
+C23 a_85_n19# a 0.02fF
+C24 Gnd cout 0.05fF
+C25 a_85_n19# a_61_12# 0.09fF
+C26 a_85_n19# a_61_n19# 0.09fF
+C27 a cin 0.37fF
+C28 a_5_n22# b 0.07fF
+C29 VDD a 0.74fF
+C30 a_61_12# cin 0.02fF
+C31 VDD a_61_12# 0.41fF
+C32 a_61_n19# cin 0.02fF
+C33 a_5_n22# a 0.08fF
+C34 a_5_n22# a_61_12# 0.31fF
+C35 a_5_n22# a_61_n19# 0.23fF
+C36 a_85_n19# cin 0.17fF
+C37 a_85_n19# VDD 0.22fF
+C38 a_16_12# b 0.02fF
+C39 a_5_n22# a_16_n19# 0.37fF
+C40 a_61_n19# Gnd 0.15fF
+C41 a_16_n19# Gnd 0.16fF
+C42 Gnd Gnd 1.06fF
+C43 Sum0 Gnd 0.12fF
+C44 a_61_12# Gnd 0.02fF
+C45 a_16_12# Gnd 0.02fF
+C46 cout Gnd 0.12fF
+C47 a_85_n19# Gnd 0.46fF
+C48 a_5_n22# Gnd 0.43fF
+C49 b Gnd 0.23fF
+C50 a Gnd 0.46fF
+C51 cin Gnd 0.33fF
+C52 VDD Gnd 3.89fF
