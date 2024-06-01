@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"Device"},{"p":"<Unnamed>","l":"HeadPhones"},{"p":"<Unnamed>","l":"Inventory"},{"p":"<Unnamed>","l":"Laptop"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"SmartPhone"},{"p":"<Unnamed>","l":"SmartWatch"},{"p":"<Unnamed>","l":"Tv"}]
