@@ -1,0 +1,50 @@
+magic
+tech scmos
+timestamp 1703862635
+<< polycontact >>
+rect 8 23 13 28
+rect 35 23 40 28
+<< metal1 >>
+rect 50 36 93 39
+rect 44 34 93 36
+rect 44 33 53 34
+rect 110 -2 114 1
+rect 46 -37 84 -32
+<< m2contact >>
+rect 93 34 98 39
+rect 84 -37 89 -32
+<< pm12contact >>
+rect 8 23 13 28
+rect 35 23 40 28
+rect 84 0 89 5
+rect 93 -1 98 4
+rect 8 -36 13 -31
+rect 35 -36 40 -31
+<< metal2 >>
+rect 8 -31 13 23
+rect 35 -31 40 23
+rect 84 -32 89 0
+rect 93 4 98 34
+use mux2x1  mux2x1_2
+timestamp 1703861445
+transform 1 0 84 0 1 12
+box -17 -38 33 19
+use mux2x1  mux2x1_1
+timestamp 1703861445
+transform 1 0 17 0 1 -23
+box -17 -38 33 19
+use mux2x1  mux2x1_0
+timestamp 1703861445
+transform 1 0 17 0 1 36
+box -17 -38 33 19
+<< labels >>
+rlabel space 20 26 20 26 1 D3
+rlabel space 28 26 28 26 1 D2
+rlabel space 19 -33 19 -33 1 D1
+rlabel space 28 -34 28 -34 1 D0
+rlabel metal1 112 -1 112 -1 7 output
+rlabel space 104 2 104 2 1 nS0
+rlabel space 78 2 78 2 1 S0
+rlabel pm12contact 10 25 10 25 1 S1
+rlabel pm12contact 38 25 38 25 1 nS1
+<< end >>

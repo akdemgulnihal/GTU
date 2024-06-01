@@ -1,0 +1,63 @@
+timestamp 1706368279
+version 8.3
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+use inv inv_0 1 0 17 0 1 33
+use inv inv_1 1 0 41 0 1 33
+use inv inv_2 1 0 65 0 1 33
+use inv inv_3 1 0 89 0 1 33
+use inv inv_4 1 0 113 0 1 33
+use inv inv_5 0 1 23 -1 0 -27
+use inv inv_6 0 -1 32 1 0 80
+use inv inv_7 0 1 81 -1 0 -27
+use inv inv_8 0 -1 93 1 0 80
+node "node6" 0 66.48 106 23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0
+node "node4" 1 179.158 61 23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 142 78 0 0 0 0 0 0
+node "node2" 1 141.824 13 -5 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 142 78 0 0 0 0 0 0
+node "node5" 1 182.225 85 23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66 48 195 104 0 0 0 0 0 0
+node "node3" 1 148.568 37 23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 150 82 0 0 0 0 0 0
+subcap "node5" -413.811
+cap "inv_0/Vdd" "inv_0/a_n12_n20#" 13.194
+cap "inv_6/Vdd" "inv_1/a_n12_n20#" 2.842
+cap "inv_2/a_n12_n20#" "inv_7/Vdd" 1.336
+cap "inv_4/Gnd" "inv_7/Vdd" 11.7823
+cap "inv_2/a_n12_n20#" "inv_7/Gnd" 49.4856
+cap "inv_2/a_n12_n20#" "inv_2/Gnd" 17.508
+cap "inv_3/Gnd" "inv_2/a_n12_n20#" 113.73
+cap "inv_5/Gnd" "inv_0/Gnd" 29.4557
+cap "inv_1/Gnd" "inv_0/Gnd" 61.857
+cap "inv_1/a_n12_n20#" "inv_0/Vdd" 87.0656
+cap "inv_1/Gnd" "inv_2/Gnd" 61.857
+cap "inv_5/Vdd" "inv_1/Gnd" 35.3469
+cap "inv_3/Gnd" "inv_4/Gnd" 61.857
+cap "inv_0/Gnd" "inv_0/a_n12_n20#" 38.156
+cap "inv_5/Vdd" "inv_0/a_n12_n20#" 6.48
+cap "inv_2/a_n12_n20#" "inv_0/Vdd" 13.194
+cap "inv_7/Gnd" "inv_2/Gnd" 35.3469
+cap "inv_3/Gnd" "inv_2/Gnd" 61.857
+cap "inv_0/Vdd" "inv_3/a_n12_n20#" 78.818
+cap "inv_3/Vdd" "inv_4/Vdd" 20.619
+cap "inv_4/Gnd" "inv_3/Gnd" 20.619
+cap "inv_3/a_n12_n20#" "inv_4/Vdd" 51.5475
+cap "inv_8/Vdd" "inv_3/a_n12_n20#" 1.838
+cap "inv_7/Vdd" "inv_4/Gnd" 17.6734
+cap "inv_4/a_n12_n20#" "inv_4/Vdd" 2.672
+merge "inv_5/a_n20_n10#" "inv_1/a_n20_n10#" -82.316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -32 0 0 0 0 0 0 0 0
+merge "inv_1/a_n20_n10#" "inv_0/a_n12_n20#"
+merge "inv_0/a_n12_n20#" "node2"
+merge "inv_8/a_n20_n10#" "inv_4/a_n20_n10#" -89.168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 -36 0 0 0 0 0 0 0 0
+merge "inv_4/a_n20_n10#" "inv_3/a_n12_n20#"
+merge "inv_3/a_n12_n20#" "node5"
+merge "inv_4/Vdd" "inv_3/Vdd" 79.816 0 0 0 0 88 -176 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_3/Vdd" "inv_2/Vdd"
+merge "inv_2/Vdd" "inv_1/Vdd"
+merge "inv_1/Vdd" "inv_0/Vdd"
+merge "inv_7/a_n20_n10#" "inv_3/a_n20_n10#" -74.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -32 0 0 0 0 0 0 0 0
+merge "inv_3/a_n20_n10#" "inv_2/a_n12_n20#"
+merge "inv_2/a_n12_n20#" "node4"
+merge "inv_6/a_n20_n10#" "inv_2/a_n20_n10#" -109.872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -32 0 0 0 0 0 0 0 0
+merge "inv_2/a_n20_n10#" "inv_1/a_n12_n20#"
+merge "inv_1/a_n12_n20#" "node3"
+merge "inv_4/a_n12_n20#" "node6" -33.648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0

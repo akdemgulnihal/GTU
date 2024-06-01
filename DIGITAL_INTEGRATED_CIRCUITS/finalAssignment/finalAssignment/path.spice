@@ -1,0 +1,191 @@
+* SPICE3 file created from path.ext - technology: scmos
+
+.option scale=0.12u
+
+.global Vdd Gnd 
+
+.subckt inv Gnd Vdd a_n12_n20# a_n20_n10#
+M1000 a_n12_n20# a_n20_n10# Vdd Vdd pfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1001 a_n12_n20# a_n20_n10# Gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+C0 a_n12_n20# Vdd 0.13fF
+C1 a_n12_n20# Gnd 0.08fF
+C2 a_n20_n10# Vdd 0.14fF
+C3 a_n20_n10# Gnd 0.02fF
+C4 a_n20_n10# a_n12_n20# 0.03fF
+C5 Gnd Gnd 0.14fF
+C6 a_n12_n20# Gnd 0.08fF
+C7 a_n20_n10# Gnd 0.20fF
+C8 Vdd Gnd 0.48fF
+.ends
+
+.subckt nor a_n3_n23# Vdd a_n3_n4# a_3_n9# a_n9_n11#
+M1000 a_n3_n23# a_n9_n11# Gnd Gnd nfet w=4 l=2
++  ad=32 pd=24 as=40 ps=36
+M1001 a_n3_n23# a_3_n9# a_n3_n4# Vdd pfet w=4 l=2
++  ad=28 pd=22 as=32 ps=24
+M1002 Gnd a_3_n9# a_n3_n23# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 a_n3_n4# a_n9_n11# Vdd Vdd pfet w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+C0 a_n3_n23# a_3_n9# 0.13fF
+C1 a_n9_n11# a_3_n9# 0.02fF
+C2 a_n3_n23# Gnd 0.16fF
+C3 Vdd a_n3_n23# 0.04fF
+C4 Vdd a_n9_n11# 0.04fF
+C5 Gnd Gnd 0.19fF
+C6 a_n3_n23# Gnd 0.14fF
+C7 a_3_n9# Gnd 0.25fF
+C8 a_n9_n11# Gnd 0.27fF
+C9 Vdd Gnd 0.17fF
+.ends
+
+.subckt nand Gnd Vdd output a b
+M1000 output b a_2_n15# Gnd nfet w=4 l=2
++  ad=24 pd=20 as=32 ps=24
+M1001 Vdd b output Vdd pfet w=4 l=2
++  ad=40 pd=36 as=32 ps=24
+M1002 output a Vdd Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 a_2_n15# a Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+C0 Gnd output 0.04fF
+C1 output Vdd 0.16fF
+C2 b output 0.16fF
+C3 Vdd a 0.05fF
+C4 b a 0.02fF
+C5 output a 0.05fF
+C6 Gnd Gnd 0.16fF
+C7 output Gnd 0.16fF
+C8 b Gnd 0.29fF
+C9 a Gnd 0.29fF
+C10 Vdd Gnd 0.21fF
+.ends
+
+
+* Top level circuit path
+
+Xinv_20 inv_20/Gnd inv_20/Vdd inv_20/a_n12_n20# m1_130_n36# inv
+Xinv_11 inv_11/Gnd inv_11/Vdd inv_11/a_n12_n20# m1_130_n36# inv
+Xinv_10 inv_10/Gnd inv_10/Vdd inv_10/a_n12_n20# m1_130_n36# inv
+Xinv_22 inv_22/Gnd inv_22/Vdd inv_22/a_n12_n20# m1_130_n36# inv
+Xinv_21 inv_21/Gnd inv_21/Vdd inv_21/a_n12_n20# m1_130_n36# inv
+Xinv_12 inv_12/Gnd inv_12/Vdd inv_12/a_n12_n20# m1_130_n36# inv
+Xinv_23 inv_23/Gnd inv_23/Vdd inv_23/a_n12_n20# m1_130_n36# inv
+Xinv_13 inv_13/Gnd inv_13/Vdd inv_13/a_n12_n20# m1_130_n36# inv
+Xinv_24 inv_24/Gnd inv_24/Vdd inv_24/a_n12_n20# m1_130_n36# inv
+Xinv_25 inv_25/Gnd inv_25/Vdd inv_25/a_n12_n20# m1_130_n36# inv
+Xinv_14 inv_14/Gnd inv_14/Vdd inv_14/a_n12_n20# m1_130_n36# inv
+Xinv_26 inv_26/Gnd inv_26/Vdd inv_26/a_n12_n20# m1_130_n36# inv
+Xinv_15 inv_15/Gnd inv_15/Vdd inv_15/a_n12_n20# m1_130_n36# inv
+Xinv_16 inv_16/Gnd inv_16/Vdd inv_16/a_n12_n20# m1_130_n36# inv
+Xinv_17 inv_17/Gnd inv_17/Vdd inv_17/a_n12_n20# m1_130_n36# inv
+Xinv_18 inv_18/Gnd inv_18/Vdd inv_18/a_n12_n20# m1_130_n36# inv
+Xinv_19 inv_19/Gnd inv_19/Vdd inv_19/a_n12_n20# m1_130_n36# inv
+Xinv_0 inv_0/Gnd inv_0/Vdd nand_0/a input1 inv
+Xnor_0 m1_98_n36# nor_0/Vdd nor_0/a_n3_n4# nand_0/output input3 nor
+Xinv_1 inv_1/Gnd inv_1/Vdd m1_130_n36# m1_98_n36# inv
+Xinv_2 inv_2/Gnd inv_2/Vdd inv_2/a_n12_n20# m1_130_n36# inv
+Xinv_3 inv_3/Gnd inv_3/Vdd inv_3/a_n12_n20# m1_130_n36# inv
+Xinv_4 inv_4/Gnd inv_4/Vdd inv_4/a_n12_n20# m1_130_n36# inv
+Xinv_5 inv_5/Gnd inv_5/Vdd inv_5/a_n12_n20# m1_130_n36# inv
+Xinv_7 inv_7/Gnd inv_7/Vdd inv_7/a_n12_n20# m1_130_n36# inv
+Xinv_6 inv_6/Gnd inv_6/Vdd inv_6/a_n12_n20# m1_130_n36# inv
+Xinv_8 inv_8/Gnd inv_8/Vdd inv_8/a_n12_n20# m1_130_n36# inv
+Xinv_9 inv_9/Gnd inv_9/Vdd inv_9/a_n12_n20# m1_130_n36# inv
+Xnand_0 nand_0/Gnd nand_0/Vdd nand_0/output nand_0/a input2 nand
+C0 inv_23/Vdd m1_130_n36# 0.00fF
+C1 nand_0/a inv_0/Vdd 0.00fF
+C2 inv_25/Vdd m1_130_n36# 0.00fF
+C3 input3 nand_0/Gnd 0.16fF
+C4 m1_130_n36# inv_8/Vdd 0.00fF
+C5 m1_130_n36# inv_2/Gnd 0.18fF
+C6 inv_26/Gnd m1_130_n36# 0.13fF
+C7 m1_130_n36# inv_18/Gnd 0.05fF
+C8 inv_12/Gnd m1_130_n36# 0.05fF
+C9 m1_130_n36# inv_14/Gnd 0.06fF
+C10 m1_130_n36# inv_21/Vdd 0.00fF
+C11 inv_15/Gnd m1_130_n36# 0.06fF
+C12 inv_1/Vdd m1_98_n36# 0.00fF
+C13 inv_17/Vdd m1_130_n36# 0.00fF
+C14 m1_130_n36# inv_19/Vdd 0.00fF
+C15 m1_130_n36# inv_24/Gnd 0.06fF
+C16 inv_6/Gnd m1_130_n36# 0.18fF
+C17 m1_130_n36# inv_7/Vdd 0.00fF
+C18 m1_130_n36# inv_14/Vdd 0.00fF
+C19 inv_20/Gnd m1_130_n36# 0.18fF
+C20 m1_130_n36# inv_25/Gnd 0.06fF
+C21 inv_3/a_n12_n20# m1_130_n36# 0.02fF
+C22 input2 nand_0/output 0.01fF
+C23 inv_16/Vdd m1_130_n36# 0.00fF
+C24 inv_4/Vdd m1_130_n36# 0.00fF
+C25 inv_24/Vdd m1_130_n36# 0.00fF
+C26 m1_130_n36# inv_12/Vdd 0.00fF
+C27 input3 nand_0/output 0.03fF
+C28 input2 nand_0/a 0.28fF
+C29 m1_130_n36# inv_6/a_n12_n20# 0.03fF
+C30 inv_22/Vdd m1_130_n36# 0.00fF
+C31 nand_0/Vdd nand_0/a 0.04fF
+C32 inv_13/Vdd m1_130_n36# 0.00fF
+C33 nand_0/output nor_0/a_n3_n4# 0.02fF
+C34 input2 inv_0/Gnd 0.12fF
+C35 inv_0/Vdd input1 0.00fF
+C36 inv_10/Gnd m1_130_n36# 0.13fF
+C37 inv_13/Gnd m1_130_n36# 0.13fF
+C38 m1_130_n36# inv_5/Vdd 0.00fF
+C39 input3 nor_0/Vdd 0.01fF
+C40 inv_26/Vdd m1_130_n36# 0.00fF
+C41 m1_130_n36# inv_20/a_n12_n20# 0.03fF
+C42 m1_130_n36# inv_2/a_n12_n20# 0.03fF
+C43 nand_0/output nor_0/Vdd 0.05fF
+C44 m1_130_n36# inv_3/Gnd 0.17fF
+C45 m1_130_n36# inv_4/a_n12_n20# 0.01fF
+C46 inv_7/Gnd m1_130_n36# 0.18fF
+C47 inv_21/Gnd m1_130_n36# 0.06fF
+C48 inv_23/Gnd m1_130_n36# 0.06fF
+C49 m1_130_n36# inv_15/Vdd 0.00fF
+C50 m1_130_n36# inv_11/Vdd 0.00fF
+C51 nand_0/output m1_98_n36# 0.05fF
+C52 nand_0/a inv_0/Gnd 0.04fF
+C53 m1_130_n36# inv_9/Gnd 0.16fF
+C54 inv_17/Gnd m1_130_n36# 0.06fF
+C55 inv_3/Vdd m1_130_n36# 0.00fF
+C56 inv_19/Gnd m1_130_n36# 0.05fF
+C57 inv_9/Vdd m1_130_n36# 0.00fF
+C58 m1_130_n36# inv_16/Gnd 0.06fF
+C59 inv_11/Gnd m1_130_n36# 0.05fF
+C60 inv_2/Vdd m1_130_n36# 0.00fF
+C61 m1_130_n36# inv_20/Vdd 0.00fF
+C62 inv_8/Gnd m1_130_n36# 0.13fF
+C63 m1_130_n36# inv_5/Gnd 0.13fF
+C64 m1_130_n36# inv_18/Vdd 0.00fF
+C65 m1_130_n36# inv_4/Gnd 0.18fF
+C66 inv_6/Vdd m1_130_n36# 0.00fF
+C67 inv_10/Vdd m1_130_n36# 0.00fF
+C68 m1_130_n36# inv_7/a_n12_n20# 0.03fF
+C69 m1_130_n36# inv_1/Vdd 0.00fF
+C70 input2 nand_0/Gnd 0.05fF
+C71 inv_22/Gnd m1_130_n36# 0.06fF
+C72 input2 Vdd 0.34fF
+C73 m1_98_n36# Vdd 0.02fF
+C74 nand_0/output Vdd 0.25fF
+C75 input3 Vdd 0.47fF
+C76 nand_0/a Vdd 0.09fF
+C77 input1 Vdd 0.05fF
+C78 m1_130_n36# Vdd 1.61fF
+.end
+
+
+.model nfet NMOS
+.model pfet PMOS
+
+Vs Vdd gnd 2.5V
+Vp0 input gnd PULSE(0 2.5 2n 0.1n 0.1n 4n)
+Vp input2 gnd 1
+Vp1 input3 gnd 0
+
+.TRAN 1n 5n
+.OPTION reltol=1e-5
+.include tsmc_cmos025
+.END

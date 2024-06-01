@@ -1,0 +1,37 @@
+* SPICE3 file created from inv.ext - technology: scmos
+
+.option scale=0.12u
+
+.global Vdd Gnd 
+
+
+* Top level circuit inv
+
+M1000 output input Vdd Vdd pfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1001 output input Gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+C0 Gnd input 0.02fF
+C1 Gnd output 0.08fF
+C2 Vdd input 0.14fF
+C3 output input 0.03fF
+C4 Vdd output 0.13fF
+C5 Gnd Gnd 0.09fF
+C6 output Gnd 0.07fF
+C7 input Gnd 0.20fF
+C8 Vdd Gnd 0.48fF
+.end
+
+
+.model nfet NMOS
+.model pfet PMOS
+
+Vs vdd gnd 2.5V
+*Vp input gnd PULSE(0 2.5 2n 0.1n 0.1n 4n)
+Vp input gnd PULSE(2.5 0 2n 0.1n 0.1n 2n 4.2n)
+
+
+.TRAN 1n 4n
+.OPTION reltol=1e-5
+.include tsmc_cmos025
+.END

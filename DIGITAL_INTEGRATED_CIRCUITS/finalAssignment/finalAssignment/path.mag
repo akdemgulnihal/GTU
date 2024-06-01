@@ -1,0 +1,217 @@
+magic
+tech scmos
+timestamp 1706375523
+<< metal1 >>
+rect 141 355 183 359
+rect 141 327 146 355
+rect 179 352 183 355
+rect 141 323 184 327
+rect 141 294 146 323
+rect 180 317 184 323
+rect 141 290 183 294
+rect 141 262 146 290
+rect 179 284 183 290
+rect 141 258 180 262
+rect 141 227 146 258
+rect 176 252 180 258
+rect 141 223 180 227
+rect 141 195 146 223
+rect 176 217 180 223
+rect 141 191 180 195
+rect 141 163 146 191
+rect 176 185 180 191
+rect 141 159 181 163
+rect 141 125 146 159
+rect 177 153 181 159
+rect 141 121 181 125
+rect 141 82 146 121
+rect 177 114 181 121
+rect 141 78 182 82
+rect 141 46 146 78
+rect 178 71 182 78
+rect 141 42 183 46
+rect -9 23 5 27
+rect 16 23 31 27
+rect 26 3 31 23
+rect 141 7 146 42
+rect 179 33 183 42
+rect 26 -1 45 3
+rect 65 -1 82 4
+rect 141 3 183 7
+rect -9 -8 55 -4
+rect 68 -31 79 -27
+rect 87 -29 90 -25
+rect -8 -35 73 -31
+rect 141 -32 146 3
+rect 179 -5 183 3
+rect 98 -36 114 -32
+rect 130 -36 146 -32
+rect 141 -40 184 -36
+rect 141 -73 146 -40
+rect 180 -45 184 -40
+rect 141 -77 186 -73
+rect 141 -113 146 -77
+rect 182 -83 186 -77
+rect 141 -117 184 -113
+rect 141 -155 146 -117
+rect 180 -123 184 -117
+rect 141 -159 183 -155
+rect 141 -193 146 -159
+rect 179 -164 183 -159
+rect 141 -197 185 -193
+rect 141 -230 146 -197
+rect 181 -202 185 -197
+rect 141 -234 185 -230
+rect 141 -269 146 -234
+rect 181 -239 185 -234
+rect 141 -273 184 -269
+rect 141 -307 146 -273
+rect 180 -279 184 -273
+rect 141 -312 183 -307
+rect 141 -340 146 -312
+rect 179 -315 183 -312
+rect 141 -345 184 -340
+rect 141 -379 146 -345
+rect 180 -351 184 -345
+rect 141 -384 183 -379
+rect 141 -421 146 -384
+rect 179 -389 183 -384
+rect 141 -425 181 -421
+rect 141 -461 146 -425
+rect 177 -429 181 -425
+rect 141 -465 182 -461
+rect 141 -498 146 -465
+rect 178 -472 182 -465
+rect 141 -502 183 -498
+rect 141 -549 146 -502
+rect 179 -509 183 -502
+rect 141 -553 184 -549
+rect 141 -562 146 -553
+rect 180 -559 184 -553
+<< m2contact >>
+rect 82 -1 87 4
+rect 82 -29 87 -24
+<< metal2 >>
+rect 82 -24 87 -1
+use inv  inv_21
+timestamp 1706367479
+transform 0 1 190 -1 0 -372
+box -25 -30 -1 16
+use inv  inv_22
+timestamp 1706367479
+transform 0 1 189 -1 0 -411
+box -25 -30 -1 16
+use inv  inv_23
+timestamp 1706367479
+transform 0 1 187 -1 0 -452
+box -25 -30 -1 16
+use inv  inv_24
+timestamp 1706367479
+transform 0 1 188 -1 0 -492
+box -25 -30 -1 16
+use inv  inv_18
+timestamp 1706367479
+transform 0 1 191 -1 0 -262
+box -25 -30 -1 16
+use inv  inv_17
+timestamp 1706367479
+transform 0 1 191 -1 0 -224
+box -25 -30 -1 16
+use inv  inv_20
+timestamp 1706367479
+transform 0 1 189 -1 0 -338
+box -25 -30 -1 16
+use inv  inv_19
+timestamp 1706367479
+transform 0 1 190 -1 0 -301
+box -25 -30 -1 16
+use inv  inv_13
+timestamp 1706367479
+transform 0 1 190 -1 0 -66
+box -25 -30 -1 16
+use inv  inv_14
+timestamp 1706367479
+transform 0 1 192 -1 0 -104
+box -25 -30 -1 16
+use inv  inv_16
+timestamp 1706367479
+transform 0 1 189 -1 0 -186
+box -25 -30 -1 16
+use inv  inv_15
+timestamp 1706367479
+transform 0 1 190 -1 0 -144
+box -25 -30 -1 16
+use nor  nor_0
+timestamp 1706369294
+transform 1 0 84 0 1 -20
+box -12 -33 16 10
+use inv  inv_1
+timestamp 1706367479
+transform 1 0 135 0 1 -26
+box -25 -30 -1 16
+use inv  inv_0
+timestamp 1706367479
+transform 1 0 22 0 1 33
+box -25 -30 -1 16
+use nand  nand_0
+timestamp 1706365654
+transform 1 0 44 0 1 0
+box -7 -25 23 20
+use inv  inv_9
+timestamp 1706367479
+transform 0 1 187 -1 0 95
+box -25 -30 -1 16
+use inv  inv_10
+timestamp 1706367479
+transform 0 1 188 -1 0 52
+box -25 -30 -1 16
+use inv  inv_11
+timestamp 1706367479
+transform 0 1 189 -1 0 14
+box -25 -30 -1 16
+use inv  inv_12
+timestamp 1706367479
+transform 0 1 189 -1 0 -25
+box -25 -30 -1 16
+use inv  inv_5
+timestamp 1706367479
+transform 0 1 186 -1 0 232
+box -25 -30 -1 16
+use inv  inv_6
+timestamp 1706367479
+transform 0 1 186 -1 0 197
+box -25 -30 -1 16
+use inv  inv_7
+timestamp 1706367479
+transform 0 1 186 -1 0 165
+box -25 -30 -1 16
+use inv  inv_8
+timestamp 1706367479
+transform 0 1 187 -1 0 133
+box -25 -30 -1 16
+use inv  inv_2
+timestamp 1706367479
+transform 0 1 189 -1 0 329
+box -25 -30 -1 16
+use inv  inv_3
+timestamp 1706367479
+transform 0 1 190 -1 0 297
+box -25 -30 -1 16
+use inv  inv_4
+timestamp 1706367479
+transform 0 1 189 -1 0 264
+box -25 -30 -1 16
+use inv  inv_26
+timestamp 1706367479
+transform 0 1 190 -1 0 -579
+box -25 -30 -1 16
+use inv  inv_25
+timestamp 1706367479
+transform 0 1 189 -1 0 -529
+box -25 -30 -1 16
+<< labels >>
+rlabel metal1 -5 -6 -5 -6 3 input2
+rlabel metal1 0 -33 0 -33 1 input3
+rlabel metal1 -7 26 -7 26 3 input1
+rlabel space 181 -20 181 -20 1 output12
+<< end >>

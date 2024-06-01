@@ -1,0 +1,154 @@
+* SPICE3 file created from mux4x1.ext - technology: scmos
+
+.option scale=0.12u
+
+.model pfet PMOS
+.model nfet NMOS
+
+
+M1000 mux2x1_0/a_n11_3# nS1 a_93_n1# VDD pfet w=4 l=2
++  ad=68 pd=58 as=24 ps=20
+M1001 mux2x1_0/Gnd mux2x1_0/a_0_n12# mux2x1_0/a_n4_n28# Gnd nfet w=4 l=2
++  ad=28 pd=22 as=20 ps=18
+M1002 a_93_n1# mux2x1_0/a_9_n13# mux2x1_0/a_n11_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 mux2x1_0/a_n4_3# S1 mux2x1_0/a_n11_3# VDD pfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1004 mux2x1_0/a_n11_3# mux2x1_0/a_0_n12# mux2x1_0/a_n4_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 mux2x1_0/a_n4_n28# S1 a_93_n1# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1006 a_93_n1# nS1 mux2x1_0/a_12_n28# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=24 ps=20
+M1007 mux2x1_0/a_12_n28# mux2x1_0/a_9_n13# mux2x1_0/Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 mux2x1_1/a_n11_3# nS1 a_84_0# VDD pfet w=4 l=2
++  ad=68 pd=58 as=24 ps=20
+M1009 mux2x1_1/Gnd mux2x1_1/a_0_n12# mux2x1_1/a_n4_n28# Gnd nfet w=4 l=2
++  ad=28 pd=22 as=20 ps=18
+M1010 a_84_0# mux2x1_1/a_9_n13# mux2x1_1/a_n11_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 mux2x1_1/a_n4_3# S1 mux2x1_1/a_n11_3# VDD pfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1012 mux2x1_1/a_n11_3# mux2x1_1/a_0_n12# mux2x1_1/a_n4_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 mux2x1_1/a_n4_n28# S1 a_84_0# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1014 a_84_0# nS1 mux2x1_1/a_12_n28# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=24 ps=20
+M1015 mux2x1_1/a_12_n28# mux2x1_1/a_9_n13# mux2x1_1/Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 mux2x1_2/a_n11_3# mux2x1_2/a_18_n31# output VDD pfet w=4 l=2
++  ad=68 pd=58 as=24 ps=20
+M1017 mux2x1_2/Gnd a_84_0# mux2x1_2/a_n4_n28# Gnd nfet w=4 l=2
++  ad=28 pd=22 as=20 ps=18
+M1018 output a_93_n1# mux2x1_2/a_n11_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 mux2x1_2/a_n4_3# mux2x1_2/a_n9_n13# mux2x1_2/a_n11_3# VDD pfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1020 mux2x1_2/a_n11_3# a_84_0# mux2x1_2/a_n4_3# VDD pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 mux2x1_2/a_n4_n28# mux2x1_2/a_n9_n13# output Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1022 output mux2x1_2/a_18_n31# mux2x1_2/a_12_n28# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=24 ps=20
+M1023 mux2x1_2/a_12_n28# a_93_n1# mux2x1_2/Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 mux2x1_2/a_n4_n28# a_84_0# 0.00fF
+C1 mux2x1_2/a_18_n31# a_93_n1# 0.19fF
+C2 a_93_n1# mux2x1_0/a_0_n12# 0.05fF
+C3 output mux2x1_2/a_n11_3# 0.21fF
+C4 VDD mux2x1_0/a_n4_3# 0.02fF
+C5 a_84_0# mux2x1_1/Gnd 0.13fF
+C6 VDD mux2x1_2/a_n11_3# 0.44fF
+C7 a_84_0# mux2x1_2/a_n11_3# 0.06fF
+C8 S1 mux2x1_0/Gnd 0.05fF
+C9 mux2x1_0/a_9_n13# nS1 0.19fF
+C10 S1 mux2x1_0/a_n4_n28# 0.00fF
+C11 mux2x1_0/a_12_n28# nS1 0.00fF
+C12 mux2x1_0/a_9_n13# VDD 0.09fF
+C13 mux2x1_0/Gnd nS1 0.05fF
+C14 S1 mux2x1_0/a_n11_3# 0.05fF
+C15 output mux2x1_2/Gnd 0.13fF
+C16 output VDD 0.07fF
+C17 output a_84_0# 0.08fF
+C18 S1 VDD 0.25fF
+C19 mux2x1_1/a_n11_3# S1 0.11fF
+C20 a_84_0# S1 0.06fF
+C21 mux2x1_0/Gnd VDD 0.12fF
+C22 mux2x1_1/a_n11_3# mux2x1_0/Gnd 0.12fF
+C23 a_93_n1# mux2x1_2/a_n11_3# 0.04fF
+C24 mux2x1_1/a_0_n12# S1 0.20fF
+C25 VDD nS1 0.20fF
+C26 mux2x1_1/a_n11_3# nS1 0.07fF
+C27 a_84_0# nS1 0.20fF
+C28 mux2x1_0/a_n11_3# VDD 0.44fF
+C29 mux2x1_2/Gnd a_84_0# 0.20fF
+C30 mux2x1_1/a_n11_3# VDD 0.44fF
+C31 a_84_0# VDD 0.16fF
+C32 mux2x1_1/a_n11_3# a_84_0# 0.21fF
+C33 mux2x1_2/a_n4_3# VDD 0.02fF
+C34 a_93_n1# mux2x1_0/a_9_n13# 0.07fF
+C35 mux2x1_1/a_0_n12# VDD 0.09fF
+C36 mux2x1_1/a_n11_3# mux2x1_1/a_0_n12# 0.06fF
+C37 a_84_0# mux2x1_1/a_0_n12# 0.05fF
+C38 output a_93_n1# 0.11fF
+C39 S1 mux2x1_1/a_n4_3# 0.00fF
+C40 a_93_n1# S1 0.12fF
+C41 a_93_n1# mux2x1_0/Gnd 0.13fF
+C42 a_93_n1# nS1 0.23fF
+C43 mux2x1_2/a_n9_n13# mux2x1_2/a_n11_3# 0.05fF
+C44 a_93_n1# mux2x1_0/a_n11_3# 0.21fF
+C45 VDD mux2x1_1/a_n4_3# 0.02fF
+C46 a_93_n1# VDD 0.29fF
+C47 a_84_0# a_93_n1# 0.23fF
+C48 mux2x1_0/a_9_n13# mux2x1_0/a_0_n12# 0.16fF
+C49 mux2x1_1/a_9_n13# nS1 0.19fF
+C50 mux2x1_2/a_18_n31# output 0.18fF
+C51 S1 mux2x1_0/a_0_n12# 0.20fF
+C52 VDD mux2x1_1/a_9_n13# 0.09fF
+C53 a_84_0# mux2x1_1/a_9_n13# 0.07fF
+C54 output mux2x1_2/a_n9_n13# 0.06fF
+C55 mux2x1_1/a_0_n12# mux2x1_1/a_9_n13# 0.16fF
+C56 mux2x1_0/a_n11_3# mux2x1_0/a_0_n12# 0.06fF
+C57 mux2x1_2/a_18_n31# VDD 0.09fF
+C58 VDD mux2x1_0/a_0_n12# 0.09fF
+C59 mux2x1_2/a_n9_n13# VDD 0.09fF
+C60 a_84_0# mux2x1_2/a_n9_n13# 0.20fF
+C61 mux2x1_2/Gnd Gnd 0.24fF
+C62 output Gnd 0.30fF
+C63 mux2x1_2/a_18_n31# Gnd 0.28fF
+C64 a_93_n1# Gnd 0.33fF
+C65 a_84_0# Gnd 1.01fF
+C66 mux2x1_2/a_n9_n13# Gnd 0.28fF
+C67 mux2x1_1/Gnd Gnd 0.24fF
+C68 nS1 Gnd 0.92fF
+C69 mux2x1_1/a_9_n13# Gnd 0.28fF
+C70 mux2x1_1/a_0_n12# Gnd 0.28fF
+C71 S1 Gnd 0.92fF
+C72 VDD Gnd 2.99fF
+C73 mux2x1_0/Gnd Gnd 0.24fF
+C74 mux2x1_0/a_9_n13# Gnd 0.28fF
+C75 mux2x1_0/a_0_n12# Gnd 0.28fF
+
+Vp1 S1 Gnd PULSE(0 2.5 10n 0.5n 0.5n 10n 21n)
+Vp2 nS1 Gnd PULSE(2.5 0 10n 0.5n 0.5n 10n 21n)
+
+Vp3 S0 Gnd PULSE(0 2.5 5n 0.5n 0.5n 5n 11n)
+Vp4 nS0 Gnd PULSE(2.5 0 5n 0.5n 0.5n 5n 11n)
+
+
+
+Vp6 D0 Gnd PULSE(0 2.5 20n 0.5n 0.5n 20n 41n)
+Vp7 D1 Gnd PULSE(0 2.5 40n 0.5n 0.5n 40n 81n)
+Vp8 D2 Gnd PULSE(0 2.5 80n 0.5n 0.5n 80n 161n)
+Vp9 D3 Gnd PULSE(0 2.5 160n 0.5n 0.5n 160n 321n)
+
+
+
+.TRAN 1n 321n
+.OPTION reltol=1e-5
+.include tsmc_cmos025
+.END
+
+

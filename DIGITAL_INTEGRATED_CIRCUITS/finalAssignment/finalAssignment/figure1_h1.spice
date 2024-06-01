@@ -1,0 +1,76 @@
+* SPICE3 file created from figure1_h1.ext - technology: scmos
+
+.option scale=0.12u
+
+.global Vdd Gnd 
+
+.subckt inv Gnd Vdd a_n12_n20# a_n20_n10#
+M1000 a_n12_n20# a_n20_n10# Vdd Vdd pfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1001 a_n12_n20# a_n20_n10# Gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+C0 a_n12_n20# a_n20_n10# 0.03fF
+C1 a_n20_n10# Vdd 0.14fF
+C2 a_n12_n20# Gnd 0.08fF
+C3 a_n12_n20# Vdd 0.13fF
+C4 Gnd a_n20_n10# 0.02fF
+C5 Gnd Gnd 0.14fF
+C6 a_n12_n20# Gnd 0.08fF
+C7 a_n20_n10# Gnd 0.20fF
+C8 Vdd Gnd 0.48fF
+.ends
+
+
+* Top level circuit figure1_h1
+
+Xinv_0 inv_0/Gnd inv_4/Vdd node2 inv_0/a_n20_n10# inv
+Xinv_1 inv_1/Gnd inv_4/Vdd node3 node2 inv
+Xinv_2 inv_2/Gnd inv_4/Vdd node4 node3 inv
+Xinv_3 inv_3/Gnd inv_4/Vdd node5 node4 inv
+Xinv_4 inv_4/Gnd inv_4/Vdd node6 node5 inv
+Xinv_5 inv_5/Gnd inv_5/Vdd inv_5/a_n12_n20# node2 inv
+Xinv_7 inv_7/Gnd inv_7/Vdd inv_7/a_n12_n20# node4 inv
+Xinv_6 inv_6/Gnd inv_6/Vdd inv_6/a_n12_n20# node3 inv
+Xinv_8 inv_8/Gnd inv_8/Vdd inv_8/a_n12_n20# node5 inv
+C0 inv_4/Vdd node6 0.00fF
+C1 inv_7/Gnd node4 0.05fF
+C2 inv_4/Vdd node4 0.01fF
+C3 inv_7/Vdd node4 0.00fF
+C4 inv_7/Vdd inv_4/Gnd 0.03fF
+C5 node4 inv_2/Gnd 0.02fF
+C6 node5 inv_4/Vdd 0.13fF
+C7 inv_8/Vdd node5 0.00fF
+C8 inv_3/Gnd inv_2/Gnd 0.06fF
+C9 inv_6/Vdd node3 0.00fF
+C10 inv_0/Gnd inv_5/Gnd 0.03fF
+C11 inv_5/Vdd node2 0.01fF
+C12 node2 inv_4/Vdd 0.01fF
+C13 node2 inv_0/Gnd 0.04fF
+C14 node3 inv_4/Vdd 0.09fF
+C15 inv_3/Gnd node4 0.11fF
+C16 inv_4/Gnd inv_3/Gnd 0.08fF
+C17 inv_7/Gnd inv_2/Gnd 0.04fF
+C18 inv_5/Vdd inv_1/Gnd 0.04fF
+C19 inv_0/Gnd inv_1/Gnd 0.06fF
+C20 inv_1/Gnd inv_2/Gnd 0.06fF
+C21 node6 Gnd 0.07fF
+C22 node5 Gnd -0.23fF
+C23 node4 Gnd 0.18fF
+C24 node3 Gnd 0.15fF
+C25 node2 Gnd 0.14fF
+.end
+
+
+
+.model nfet NMOS
+.model pfet PMOS
+
+Vs vdd gnd 2.5V
+*Vp input gnd PULSE(0 2.5 2n 0.1n 0.1n 4n)
+Vp node1 gnd PULSE(2.5 0 2n 0.1n 0.1n 2n 4.2n)
+
+
+.TRAN 1n 20n
+.OPTION reltol=1e-5
+.include tsmc_cmos025
+.END

@@ -1,0 +1,49 @@
+timestamp 1703862635
+version 8.3
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+use mux2x1 mux2x1_2 1 0 84 0 1 12
+use mux2x1 mux2x1_1 1 0 17 0 1 -23
+use mux2x1 mux2x1_0 1 0 17 0 1 36
+node "output" 0 25.904 110 -2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0 0 0 0 0
+node "a_93_n1#" 6 509.77 93 -1 pm12c 0 0 0 0 0 0 0 0 0 0 25 20 0 0 286 140 200 90 0 0 0 0 0 0
+node "a_84_0#" 6 454.204 84 0 pm12c 0 0 0 0 0 0 0 0 0 0 25 20 0 0 240 116 210 94 0 0 0 0 0 0
+node "nS1" 25 363.366 35 -36 pm12c 0 0 0 0 0 0 0 0 0 0 50 40 0 0 50 40 320 138 0 0 0 0 0 0
+node "S1" 25 363.366 8 -36 pm12c 0 0 0 0 0 0 0 0 0 0 50 40 0 0 50 40 320 138 0 0 0 0 0 0
+cap "a_93_n1#" "a_84_0#" 134.496
+cap "nS1" "a_84_0#" 27.492
+cap "mux2x1_1/a_18_n31#" "mux2x1_1/a_n11_3#" 68.48
+cap "mux2x1_2/a_0_n12#" "mux2x1_1/a_18_n31#" 7.82
+cap "mux2x1_1/a_n9_n13#" "mux2x1_1/a_n4_3#" 2.008
+cap "mux2x1_1/a_n9_n13#" "mux2x1_0/a_n4_n28#" 2.008
+cap "mux2x1_2/a_9_n13#" "mux2x1_2/a_n11_3#" 36.52
+cap "mux2x1_1/VDD" "mux2x1_1/a_18_n31#" 18.4
+cap "mux2x1_2/a_9_n13#" "mux2x1_2/VDD" 121.678
+cap "mux2x1_0/Gnd" "mux2x1_1/a_n9_n13#" 52.018
+cap "mux2x1_1/a_n9_n13#" "mux2x1_1/a_n11_3#" 59.988
+cap "mux2x1_0/a_12_n28#" "mux2x1_1/a_18_n31#" 2.008
+cap "mux2x1_2/a_9_n13#" "mux2x1_1/a_18_n31#" 64.234
+cap "mux2x1_2/a_0_n12#" "mux2x1_2/a_9_n13#" -63.9
+cap "mux2x1_1/VDD" "mux2x1_1/a_n9_n13#" 66.111
+cap "mux2x1_2/a_9_n13#" "mux2x1_0/VDD" 9.408
+cap "mux2x1_2/a_0_n12#" "mux2x1_2/Gnd" 198.723
+cap "mux2x1_2/a_9_n13#" "mux2x1_1/a_n9_n13#" 64.234
+cap "mux2x1_2/a_9_n13#" "mux2x1_2/a_n11_n28#" 39.946
+cap "mux2x1_2/a_0_n12#" "mux2x1_2/a_n4_n28#" 3.216
+cap "mux2x1_0/Gnd" "mux2x1_1/a_n11_3#" 117.823
+cap "mux2x1_0/Gnd" "mux2x1_1/a_18_n31#" 52.018
+cap "mux2x1_0/Gnd" "mux2x1_1/VDD" 123.714
+cap "mux2x1_2/a_0_n12#" "mux2x1_2/a_n11_n28#" 33.304
+subcap "a_93_n1#" -738.342
+cap "mux2x1_2/a_n11_n28#" "mux2x1_2/a_18_n31#" 6.873
+merge "mux2x1_0/a_n9_n13#" "mux2x1_1/a_n9_n13#" -323.339 0 0 0 0 0 0 0 0 0 0 -50 -40 0 0 -50 -40 0 0 0 0 0 0 0 0
+merge "mux2x1_1/a_n9_n13#" "S1"
+merge "mux2x1_0/a_18_n31#" "mux2x1_1/a_18_n31#" -324.175 0 0 0 0 0 0 0 0 0 0 -50 -40 0 0 -50 -40 0 0 0 0 0 0 0 0
+merge "mux2x1_1/a_18_n31#" "nS1"
+merge "mux2x1_2/a_n11_n28#" "output" -21.432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0
+merge "mux2x1_1/a_n11_n28#" "mux2x1_2/a_0_n12#" -173.363 0 0 0 0 0 0 0 0 0 0 -25 -20 0 0 -30 -32 0 0 0 0 0 0 0 0
+merge "mux2x1_2/a_0_n12#" "a_84_0#"
+merge "mux2x1_0/a_n11_n28#" "mux2x1_2/a_9_n13#" -215.872 0 0 0 0 0 0 0 0 0 0 -15 -20 0 0 -85 -32 -10 0 0 0 0 0 0 0
+merge "mux2x1_2/a_9_n13#" "a_93_n1#"

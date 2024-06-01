@@ -1,0 +1,385 @@
+magic
+tech scmos
+timestamp 1706053926
+<< metal1 >>
+rect -36 275 -32 288
+rect 12 275 16 289
+rect 62 275 66 289
+rect 111 275 115 288
+rect -36 270 115 275
+rect 172 278 176 291
+rect 220 278 224 292
+rect 270 278 274 292
+rect 319 278 323 291
+rect 172 273 323 278
+rect 46 265 50 270
+rect 254 268 258 273
+rect -36 197 -32 210
+rect 12 197 16 211
+rect 62 197 66 211
+rect 111 197 115 210
+rect -36 193 115 197
+rect 172 200 176 213
+rect 220 200 224 214
+rect 270 200 274 214
+rect 319 200 323 213
+rect 172 196 323 200
+rect 46 187 50 193
+rect 102 192 115 193
+rect 254 190 258 196
+rect 310 195 323 196
+rect -36 125 -32 138
+rect 12 125 16 139
+rect 62 125 66 139
+rect 111 125 115 138
+rect -36 120 115 125
+rect 172 128 176 141
+rect 220 128 224 142
+rect 270 128 274 142
+rect 319 128 323 141
+rect 172 123 323 128
+rect 46 115 50 120
+rect 254 118 258 123
+rect 20 20 22 24
+rect 45 20 46 24
+rect 69 20 70 24
+rect 93 20 94 24
+rect 22 -32 26 -27
+rect -43 -37 108 -32
+rect -43 -50 -39 -37
+rect 6 -51 10 -37
+rect 56 -51 60 -37
+rect 104 -50 108 -37
+rect 242 -40 246 -35
+rect 177 -45 328 -40
+rect 177 -58 181 -45
+rect 226 -59 230 -45
+rect 276 -59 280 -45
+rect 324 -58 328 -45
+rect -43 -105 -30 -104
+rect 22 -105 26 -99
+rect -43 -109 108 -105
+rect -43 -122 -39 -109
+rect 6 -123 10 -109
+rect 56 -123 60 -109
+rect 104 -122 108 -109
+rect 177 -113 190 -112
+rect 242 -113 246 -107
+rect 177 -117 328 -113
+rect 177 -130 181 -117
+rect 226 -131 230 -117
+rect 276 -131 280 -117
+rect 324 -130 328 -117
+rect 22 -182 26 -177
+rect -43 -187 108 -182
+rect -43 -200 -39 -187
+rect 6 -201 10 -187
+rect 56 -201 60 -187
+rect 104 -200 108 -187
+rect 242 -190 246 -185
+rect 177 -195 328 -190
+rect 177 -208 181 -195
+rect 226 -209 230 -195
+rect 276 -209 280 -195
+rect 324 -208 328 -195
+<< m2contact >>
+rect 45 245 50 251
+rect 253 248 258 254
+rect 45 167 50 173
+rect 253 170 258 176
+rect 45 96 50 101
+rect 253 99 258 104
+rect 22 20 27 25
+rect 46 20 51 25
+rect 70 20 75 25
+rect 94 20 99 25
+rect 22 -13 27 -8
+rect 242 -21 247 -16
+rect 22 -85 27 -79
+rect 242 -93 247 -87
+rect 22 -163 27 -157
+rect 242 -171 247 -165
+<< metal2 >>
+rect 45 173 50 245
+rect 45 101 50 167
+rect 253 176 258 248
+rect 253 104 258 170
+rect 46 25 50 96
+rect 254 78 258 99
+rect 94 74 258 78
+rect 94 25 98 74
+rect 22 -8 26 20
+rect 22 -79 27 -13
+rect 70 -16 74 20
+rect 70 -21 242 -16
+rect 22 -157 27 -85
+rect 242 -87 247 -21
+rect 242 -165 247 -93
+use inv  inv_19
+timestamp 1706051141
+transform 0 1 -33 -1 0 -221
+box -25 -30 -1 16
+use inv  inv_14
+timestamp 1706051141
+transform 0 1 -33 -1 0 -143
+box -25 -30 -1 16
+use inv  inv_18
+timestamp 1706051141
+transform 0 1 16 -1 0 -221
+box -25 -30 -1 16
+use inv  inv_13
+timestamp 1706051141
+transform 0 1 16 -1 0 -143
+box -25 -30 -1 16
+use inv  inv_15
+timestamp 1706051141
+transform 0 -1 16 1 0 -156
+box -25 -30 -1 16
+use inv  inv_17
+timestamp 1706051141
+transform 0 1 66 -1 0 -221
+box -25 -30 -1 16
+use inv  inv_12
+timestamp 1706051141
+transform 0 1 66 -1 0 -143
+box -25 -30 -1 16
+use inv  inv_16
+timestamp 1706051141
+transform 0 1 114 -1 0 -221
+box -25 -30 -1 16
+use inv  inv_11
+timestamp 1706051141
+transform 0 1 114 -1 0 -143
+box -25 -30 -1 16
+use inv  inv_10
+timestamp 1706051141
+transform 0 -1 16 1 0 -78
+box -25 -30 -1 16
+use inv  inv_20
+timestamp 1706051141
+transform 0 1 187 -1 0 -229
+box -25 -30 -1 16
+use inv  inv_26
+timestamp 1706051141
+transform 0 1 187 -1 0 -151
+box -25 -30 -1 16
+use inv  inv_23
+timestamp 1706051141
+transform 0 1 286 -1 0 -229
+box -25 -30 -1 16
+use inv  inv_21
+timestamp 1706051141
+transform 0 1 236 -1 0 -229
+box -25 -30 -1 16
+use inv  inv_27
+timestamp 1706051141
+transform 0 1 286 -1 0 -151
+box -25 -30 -1 16
+use inv  inv_22
+timestamp 1706051141
+transform 0 -1 236 1 0 -164
+box -25 -30 -1 16
+use inv  inv_25
+timestamp 1706051141
+transform 0 1 236 -1 0 -151
+box -25 -30 -1 16
+use inv  inv_31
+timestamp 1706051141
+transform 0 -1 236 1 0 -86
+box -25 -30 -1 16
+use inv  inv_24
+timestamp 1706051141
+transform 0 1 334 -1 0 -229
+box -25 -30 -1 16
+use inv  inv_28
+timestamp 1706051141
+transform 0 1 334 -1 0 -151
+box -25 -30 -1 16
+use inv  inv_6
+timestamp 1706051141
+transform 0 1 -33 -1 0 -71
+box -25 -30 -1 16
+use inv  inv_7
+timestamp 1706051141
+transform 0 1 16 -1 0 -71
+box -25 -30 -1 16
+use inv  inv_8
+timestamp 1706051141
+transform 0 1 66 -1 0 -71
+box -25 -30 -1 16
+use inv  inv_5
+timestamp 1706051141
+transform 0 -1 16 1 0 -6
+box -25 -30 -1 16
+use inv  inv_9
+timestamp 1706051141
+transform 0 1 114 -1 0 -71
+box -25 -30 -1 16
+use inv  inv_0
+timestamp 1706051141
+transform 1 0 25 0 1 30
+box -25 -30 -1 16
+use inv  inv_1
+timestamp 1706051141
+transform 1 0 49 0 1 30
+box -25 -30 -1 16
+use inv  inv_2
+timestamp 1706051141
+transform 1 0 73 0 1 30
+box -25 -30 -1 16
+use inv  inv_3
+timestamp 1706051141
+transform 1 0 97 0 1 30
+box -25 -30 -1 16
+use inv  inv_4
+timestamp 1706051141
+transform 1 0 121 0 1 30
+box -25 -30 -1 16
+use inv  inv_30
+timestamp 1706051141
+transform 0 1 187 -1 0 -79
+box -25 -30 -1 16
+use inv  inv_34
+timestamp 1706051141
+transform 0 -1 236 1 0 -14
+box -25 -30 -1 16
+use inv  inv_32
+timestamp 1706051141
+transform 0 1 286 -1 0 -79
+box -25 -30 -1 16
+use inv  inv_29
+timestamp 1706051141
+transform 0 1 236 -1 0 -79
+box -25 -30 -1 16
+use inv  inv_33
+timestamp 1706051141
+transform 0 1 334 -1 0 -79
+box -25 -30 -1 16
+use inv  inv_47
+timestamp 1706051141
+transform 0 -1 6 1 0 159
+box -25 -30 -1 16
+use inv  inv_49
+timestamp 1706051141
+transform 0 -1 -42 1 0 159
+box -25 -30 -1 16
+use inv  inv_44
+timestamp 1706051141
+transform 0 -1 105 1 0 159
+box -25 -30 -1 16
+use inv  inv_48
+timestamp 1706051141
+transform 0 1 56 -1 0 94
+box -25 -30 -1 16
+use inv  inv_46
+timestamp 1706051141
+transform 0 -1 56 1 0 159
+box -25 -30 -1 16
+use inv  inv_63
+timestamp 1706051141
+transform 0 1 264 -1 0 97
+box -25 -30 -1 16
+use inv  inv_61
+timestamp 1706051141
+transform 0 -1 264 1 0 162
+box -25 -30 -1 16
+use inv  inv_62
+timestamp 1706051141
+transform 0 -1 214 1 0 162
+box -25 -30 -1 16
+use inv  inv_64
+timestamp 1706051141
+transform 0 -1 166 1 0 162
+box -25 -30 -1 16
+use inv  inv_59
+timestamp 1706051141
+transform 0 -1 313 1 0 162
+box -25 -30 -1 16
+use inv  inv_41
+timestamp 1706051141
+transform 0 -1 6 1 0 231
+box -25 -30 -1 16
+use inv  inv_39
+timestamp 1706051141
+transform 0 -1 6 1 0 309
+box -25 -30 -1 16
+use inv  inv_42
+timestamp 1706051141
+transform 0 -1 -42 1 0 231
+box -25 -30 -1 16
+use inv  inv_43
+timestamp 1706051141
+transform 0 -1 -42 1 0 309
+box -25 -30 -1 16
+use inv  inv_36
+timestamp 1706051141
+transform 0 -1 105 1 0 231
+box -25 -30 -1 16
+use inv  inv_35
+timestamp 1706051141
+transform 0 -1 105 1 0 309
+box -25 -30 -1 16
+use inv  inv_38
+timestamp 1706051141
+transform 0 1 56 -1 0 244
+box -25 -30 -1 16
+use inv  inv_40
+timestamp 1706051141
+transform 0 -1 56 1 0 231
+box -25 -30 -1 16
+use inv  inv_37
+timestamp 1706051141
+transform 0 -1 56 1 0 309
+box -25 -30 -1 16
+use inv  inv_45
+timestamp 1706051141
+transform 0 1 56 -1 0 166
+box -25 -30 -1 16
+use inv  inv_53
+timestamp 1706051141
+transform 0 1 264 -1 0 247
+box -25 -30 -1 16
+use inv  inv_55
+timestamp 1706051141
+transform 0 -1 264 1 0 234
+box -25 -30 -1 16
+use inv  inv_52
+timestamp 1706051141
+transform 0 -1 264 1 0 312
+box -25 -30 -1 16
+use inv  inv_56
+timestamp 1706051141
+transform 0 -1 214 1 0 234
+box -25 -30 -1 16
+use inv  inv_54
+timestamp 1706051141
+transform 0 -1 214 1 0 312
+box -25 -30 -1 16
+use inv  inv_57
+timestamp 1706051141
+transform 0 -1 166 1 0 234
+box -25 -30 -1 16
+use inv  inv_58
+timestamp 1706051141
+transform 0 -1 166 1 0 312
+box -25 -30 -1 16
+use inv  inv_60
+timestamp 1706051141
+transform 0 1 264 -1 0 169
+box -25 -30 -1 16
+use inv  inv_51
+timestamp 1706051141
+transform 0 -1 313 1 0 234
+box -25 -30 -1 16
+use inv  inv_50
+timestamp 1706051141
+transform 0 -1 313 1 0 312
+box -25 -30 -1 16
+<< labels >>
+rlabel space 2 22 2 22 1 node1
+rlabel m2contact 23 22 23 22 1 node2
+rlabel m2contact 48 22 48 22 1 node3
+rlabel m2contact 73 22 73 22 1 node4
+rlabel m2contact 95 22 95 22 1 node5
+rlabel space 115 22 115 22 1 node6
+<< end >>

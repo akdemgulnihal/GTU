@@ -1,0 +1,43 @@
+* SPICE3 file created from nand.ext - technology: scmos
+
+.option scale=0.12u
+
+.global Vdd Gnd 
+
+
+* Top level circuit nand
+
+M1000 output b a_2_n15# Gnd nfet w=4 l=2
++  ad=24 pd=20 as=32 ps=24
+M1001 Vdd b output Vdd pfet w=4 l=2
++  ad=40 pd=36 as=32 ps=24
+M1002 output a Vdd Vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 a_2_n15# a Gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+C0 output a 0.05fF
+C1 output Vdd 0.16fF
+C2 b a 0.02fF
+C3 Gnd output 0.04fF
+C4 a Vdd 0.05fF
+C5 b output 0.16fF
+C6 Gnd Gnd 0.16fF
+C7 output Gnd 0.16fF
+C8 b Gnd 0.29fF
+C9 a Gnd 0.29fF
+C10 Vdd Gnd 0.21fF
+.end
+
+
+.model nfet NMOS
+.model pfet PMOS
+
+Vs vdd gnd 2.5V
+*Vp input gnd PULSE(0 2.5 2n 0.1n 0.1n 4n)
+Vp a gnd PULSE(2.5 0 2n 0.1n 0.1n 2n 4.2n)
+Vp1 b gnd PULSE(2.5 0 4n 0.1n 0.1n 4n 8.2n)
+
+.TRAN 1n 9n
+.OPTION reltol=1e-5
+.include tsmc_cmos025
+.END

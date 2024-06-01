@@ -1,0 +1,71 @@
+magic
+tech scmos
+timestamp 1706368279
+<< metal1 >>
+rect 99 56 103 59
+rect 37 23 38 27
+rect 61 23 62 27
+rect 85 23 86 27
+rect 106 23 117 27
+rect 67 -4 75 -1
+<< m2contact >>
+rect 38 52 43 57
+rect 99 51 104 56
+rect 13 23 18 28
+rect 38 23 43 28
+rect 62 23 67 28
+rect 86 23 91 28
+rect 13 -5 18 0
+rect 62 -5 67 0
+<< metal2 >>
+rect 38 57 42 58
+rect 38 28 42 52
+rect 86 51 99 54
+rect 86 50 104 51
+rect 86 28 90 50
+rect 13 0 17 23
+rect 62 0 66 23
+use inv  inv_0
+timestamp 1706367479
+transform 1 0 17 0 1 33
+box -25 -30 -1 16
+use inv  inv_1
+timestamp 1706367479
+transform 1 0 41 0 1 33
+box -25 -30 -1 16
+use inv  inv_2
+timestamp 1706367479
+transform 1 0 65 0 1 33
+box -25 -30 -1 16
+use inv  inv_3
+timestamp 1706367479
+transform 1 0 89 0 1 33
+box -25 -30 -1 16
+use inv  inv_4
+timestamp 1706367479
+transform 1 0 113 0 1 33
+box -25 -30 -1 16
+use inv  inv_5
+timestamp 1706367479
+transform 0 1 23 -1 0 -27
+box -25 -30 -1 16
+use inv  inv_6
+timestamp 1706367479
+transform 0 -1 32 1 0 80
+box -25 -30 -1 16
+use inv  inv_7
+timestamp 1706367479
+transform 0 1 81 -1 0 -27
+box -25 -30 -1 16
+use inv  inv_8
+timestamp 1706367479
+transform 0 -1 93 1 0 80
+box -25 -30 -1 16
+<< labels >>
+rlabel space -7 25 -7 25 3 node1
+rlabel m2contact 15 25 15 25 1 node2
+rlabel m2contact 40 25 40 25 1 node3
+rlabel m2contact 65 25 65 25 1 node4
+rlabel m2contact 88 25 88 25 1 node5
+rlabel metal1 114 25 114 25 1 node6
+<< end >>

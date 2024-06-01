@@ -1,0 +1,23 @@
+timestamp 1706365654
+version 8.3
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+node "a_2_n15#" 9 0 2 -15 ndif 32 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Gnd" 18 158.592 -5 -15 ndc 20 18 56 36 0 0 0 0 0 0 0 0 0 0 176 76 0 0 0 0 0 0 0 0
+node "output" 15 168.192 2 6 pdif 24 20 32 24 0 0 0 0 0 0 0 0 0 0 160 88 0 0 0 0 0 0 0 0
+node "b" 62 286.004 7 -8 pc 0 0 0 0 0 0 0 0 0 0 74 72 0 0 24 20 0 0 0 0 0 0 0 0
+node "a" 62 286.004 -3 -1 pc 0 0 0 0 0 0 0 0 0 0 74 72 0 0 24 20 0 0 0 0 0 0 0 0
+node "Vdd" 35 207.84 -5 6 pdc 48 32 40 36 0 0 0 0 0 0 0 0 0 0 226 98 0 0 0 0 0 0 0 0
+cap "a" "Vdd" 54.984
+cap "b" "output" 158.516
+cap "a" "output" 54.984
+cap "Gnd" "output" 41.238
+cap "a" "b" 18.1296
+cap "output" "Vdd" 162.203
+fet nfet 10 -15 11 -14 8 12 "Gnd!" "b" 4 0 "a_2_n15#" 4 0 "output" 4 0
+fet nfet 0 -15 1 -14 8 12 "Gnd!" "a" 4 0 "Gnd" 4 0 "a_2_n15#" 4 0
+fet pfet 10 6 11 7 8 12 "Vdd!" "b" 4 0 "output" 4 0 "Vdd" 4 0
+fet pfet 0 6 1 7 8 12 "Vdd!" "a" 4 0 "Vdd" 4 0 "output" 4 0
+subcap "output" -10.144
